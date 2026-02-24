@@ -1,5 +1,5 @@
 from langchain_huggingface import ChatHuggingFace ,HuggingFaceEndpoint
-from langchain_core.prompts import PromptTemplate
+from langchain_core.prompts import PromptTemplate ,load_prompt
 from dotenv import load_dotenv
 import streamlit as st
 
@@ -11,23 +11,8 @@ llm = HuggingFaceEndpoint(
 
 )
 model = ChatHuggingFace(llm=llm)
-template= PromptTemplate (
-    template =  """Please summarize the research paper titled {paper_input} with the following specifications:
-        Explanation Style:{style_input}
-        Explanation Length:{length_input}
-      1.Mathematical Details:
-        - Include relevent mathematical equation if present in the paper.
-        - Explain the mathematical concept using simple, intituative code snippets where applicable
-      2.Analogies:
-        - Use relatable analogies to simplify complex ideas.
-      if certain information is not avalible in the paper , respond with: "Insufficient information
-      avalible" instead of guessing.
-      Ensure the summary is clear , accurate, and aligned with the provided style and length.
-    """,
-    input_variables=['paper_input','style_input','length_input'],
-    validate_template=True
-)
 
+template=load_prompt('4.PromptEngineering/template.json') 
 st.header("Research Tool")
 paper_input = st.selectbox( "Select Research Paper Name", ["Attention Is All You Need", "BERT: Pre-training of Deep Bidirectional Transformers", "GPT-3: Language Models are Few-Shot Learners", "Diffusion Models Beat GANs on Image Synthesis"] )
 
