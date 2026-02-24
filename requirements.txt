@@ -32,3 +32,6 @@ torchaudio
 
 # sentence transformer for local
 sentence-transformers
+
+# Ui framework
+streamlit
