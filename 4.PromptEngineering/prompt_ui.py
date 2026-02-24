@@ -13,7 +13,7 @@ llm = HuggingFaceEndpoint(
 model = ChatHuggingFace(llm=llm)
 template= PromptTemplate (
     template =  """Please summarize the research paper titled {paper_input} with the following specifications:
-        Explanation Style:{length_input}
+        Explanation Style:{style_input}
         Explanation Length:{length_input}
       1.Mathematical Details:
         - Include relevent mathematical equation if present in the paper.
@@ -24,7 +24,8 @@ template= PromptTemplate (
       avalible" instead of guessing.
       Ensure the summary is clear , accurate, and aligned with the provided style and length.
     """,
-    input_variables=['paper_input','style_input','length_input']
+    input_variables=['paper_input','style_input','length_input'],
+    validate_template=True
 )
 
 st.header("Research Tool")
