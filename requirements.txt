@@ -35,3 +35,6 @@ sentence-transformers
 
 # Ui framework
 streamlit
+
+#Data validation
+pydantic
