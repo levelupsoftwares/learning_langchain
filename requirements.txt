@@ -9,6 +9,9 @@ openai
 # Anthropic Integration
 langchain-anthropic
 
+# Groq-Integration
+langchain-groq
+
 # Google Gemini (PaLM) Integration
 langchain-google-genai
 google-generativeai
@@ -38,3 +41,4 @@ streamlit
 
 #Data validation
 pydantic
+pydantic[email]
