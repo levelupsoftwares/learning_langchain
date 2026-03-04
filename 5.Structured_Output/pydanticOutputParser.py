@@ -12,7 +12,7 @@ class knowledge(BaseModel):
 
 llm = HuggingFaceEndpoint(
     repo_id='meta-llama/Llama-3.1-8B-Instruct',
-    task='content-generation'
+    task='text-generation'
 )
 model = ChatHuggingFace(llm = llm)
 parser = PydanticOutputParser(pydantic_object=knowledge)
