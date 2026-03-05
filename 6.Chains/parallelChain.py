@@ -53,5 +53,6 @@ By taking advantage of quantum physics, large-scale quantum computers would be a
 
 Quantum mechanics, the study of physics at small scales, reveals surprising fundamental natural principles. Quantum computers specifically harness these phenomena to access mathematical methods of solving problems not available with classical computing alone."""
 
+chain.get_graph().print_ascii()
 result = chain.invoke({'text':text})
-print(result)
+# print(result)
