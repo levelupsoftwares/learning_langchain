@@ -1,0 +1,15 @@
+Why These Specs Matter for Your Workflow
+RAM (16GB Minimum): Agentic frameworks (like CrewAI, AutoGen, or LangGraph) often require running multiple processes, a local database (like Pinecone/ChromaDB), and an IDE simultaneously. 16GB is the baseline; avoid 8GB models unless you plan to upgrade immediately.
+
+Processor (8th Gen+): Do not go below Intel 8th Gen or Ryzen 3000 series. Agentic engineering relies heavily on asynchronous programming (asyncio in Python). Newer processors handle these concurrent tasks much more efficiently.
+
+Storage (NVMe SSD): You will be handling large environment files and potentially model weights. An NVMe SSD is non-negotiable for fast read/write speeds during development.
+
+Pro-Tips for the Lahore Market
+Check for "Soldered" RAM: If you choose a ThinkPad T14s or certain EliteBooks, check if the RAM is soldered. For AI work, having an open slot to reach 32GB in the future is a massive advantage.
+
+The "Workstation" Stretch: If you can find a Lenovo ThinkPad P14s or P53s, they sometimes drop to the 100k-110k range. These include entry-level Nvidia Quadro/T-series GPUs, which can significantly speed up local embedding generation.
+
+Display: Aim for a 1080p (FHD) IPS panel. Many older Dell/HP models come with low-res TN panels that make long hours of code debugging very straining.
+
+Would you like me to find specific shops in Lahore that currently have these models in stock?
