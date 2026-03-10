@@ -46,3 +46,6 @@ streamlit
 #Data validation
 pydantic
 pydantic[email]
+
+# Beautifulsoup for web scraping
+beautifulsoup4
