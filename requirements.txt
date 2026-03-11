@@ -1,6 +1,7 @@
 # LangChain Core
 langchain
 langchain-core
+langchain-experimental
 
 # LangChain Community
 langchain_community
