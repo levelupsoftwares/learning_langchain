@@ -50,3 +50,7 @@ pydantic[email]
 
 # Beautifulsoup for web scraping
 beautifulsoup4
+
+# Vector Store
+
+langchain-chroma
