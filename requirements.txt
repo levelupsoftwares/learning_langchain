@@ -54,3 +54,7 @@ beautifulsoup4
 # Vector Store
 
 langchain-chroma
+
+# wikipedia
+
+wikipedia
