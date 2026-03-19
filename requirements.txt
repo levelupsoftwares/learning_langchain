@@ -61,3 +61,6 @@ wikipedia
 
 # BM25
 rank_bm25
+
+#youtube-transcript-api
+youtube-transcript-api

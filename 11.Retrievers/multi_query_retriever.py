@@ -42,6 +42,9 @@ multiquery_retriever = MultiQueryRetriever.from_llm(
 )
 query = 'How to improve energy levels and maintain balance?'
 
+
+print('Generated Querires are:')
+print(multiquery_retriever.llm_chain.invoke({"question": query}))
 results = multiquery_retriever.invoke(query)
 
 for i,doc in enumerate(results):
