@@ -68,3 +68,6 @@ youtube-transcript-api
 #duck_duck go search
 duckduckgo_search
 ddgs
+
+#request
+requests
