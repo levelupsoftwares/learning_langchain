@@ -71,3 +71,7 @@ ddgs
 
 #request
 requests
+
+#ollama
+ollama
+langchain_ollama
